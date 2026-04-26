@@ -1,0 +1,160 @@
+{
+  "generated": "2026-04-26 08:21:02",
+  "ingestion": [
+    {
+      "dataset": "notes",
+      "rows_in": 1128,
+      "rows_out": 1128,
+      "issues_found": {
+        "null_columns": {},
+        "duplicate_rows": 0,
+        "schema_fixes": []
+      }
+    },
+    {
+      "dataset": "diagnoses",
+      "rows_in": 1638,
+      "rows_out": 1638,
+      "issues_found": {
+        "null_columns": {
+          "severity": 56
+        },
+        "duplicate_rows": 0,
+        "schema_fixes": []
+      }
+    },
+    {
+      "dataset": "variants",
+      "rows_in": 1137,
+      "rows_out": 1137,
+      "issues_found": {
+        "null_columns": {
+          "clinical_significance": 98
+        },
+        "duplicate_rows": 0,
+        "schema_fixes": [
+          "standardized_patient_id"
+        ]
+      }
+    },
+    {
+      "dataset": "medications",
+      "rows_in": 1922,
+      "rows_out": 1922,
+      "issues_found": {
+        "null_columns": {
+          "end_date": 215
+        },
+        "duplicate_rows": 0,
+        "schema_fixes": []
+      }
+    },
+    {
+      "dataset": "patients",
+      "rows_in": 680,
+      "rows_out": 680,
+      "issues_found": {
+        "null_columns": {
+          "blood_group": 10,
+          "contact_phone": 9,
+          "contact_email": 12,
+          "gender": 2,
+          "bloodtype": 10,
+          "contact.phone": 16,
+          "contact.email": 4
+        },
+        "duplicate_rows": 12,
+        "schema_fixes": [
+          "normalized_columns",
+          "standardized_patient_id"
+        ]
+      }
+    },
+    {
+      "dataset": "labs",
+      "rows_in": 2026,
+      "rows_out": 2026,
+      "issues_found": {
+        "null_columns": {
+          "test_value": 15,
+          "collection_date": 15,
+          "ordering_physician": 15
+        },
+        "duplicate_rows": 0,
+        "schema_fixes": [
+          "standardized_patient_id"
+        ]
+      }
+    }
+  ],
+  "cleaning": {
+    "diagnoses": {
+      "nulls_handled": 0,
+      "duplicates_removed": 0
+    },
+    "labs": {
+      "nulls_handled": 0,
+      "duplicates_removed": 0
+    },
+    "medications": {
+      "nulls_handled": 35,
+      "duplicates_removed": 0
+    },
+    "notes": {
+      "nulls_handled": 0,
+      "duplicates_removed": 0
+    },
+    "patients": {
+      "nulls_handled": 1,
+      "duplicates_removed": 12
+    },
+    "variants": {
+      "nulls_handled": 0,
+      "duplicates_removed": 0
+    },
+    "patients_unified": {
+      "nulls_handled": 0,
+      "duplicates_removed": 18
+    }
+  },
+  "orphan_records": {
+    "diagnoses": 795,
+    "labs": 430,
+    "medications": 840,
+    "variants": 134
+  },
+  "schema_mismatches": {
+    "patients": [
+      {
+        "only_in_base": [
+          "birthdate",
+          "bloodtype",
+          "contact.email",
+          "contact.phone",
+          "encounter.admissiondate",
+          "encounter.dischargedate",
+          "encounter.facility",
+          "gender",
+          "name.family",
+          "name.given"
+        ],
+        "only_in_other": []
+      },
+      {
+        "only_in_base": [
+          "admission_dt",
+          "blood_group",
+          "contact_email",
+          "contact_phone",
+          "date_of_birth",
+          "discharge_dt",
+          "first_name",
+          "last_name",
+          "sex",
+          "site"
+        ],
+        "only_in_other": []
+      }
+    ]
+  }
+}

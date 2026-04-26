@@ -1,0 +1,26 @@
+{
+  "_metadata": {
+    "dataset": "unified",
+    "row_count": 650,
+    "generated": "2026-04-26 08:36:57",
+    "source_file": "patients_unified_analytics.parquet"
+  },
+  "analytics": {
+    "site_distribution": {
+      "Alpha General Hospital": 350,
+      "<NA>": 300
+    },
+    "age_distribution": {
+      "nan": 300,
+      "75+": 104,
+      "30-44": 79,
+      "60-74": 64,
+      "45-59": 60,
+      "18-29": 43,
+      "0-17": 0
+    },
+    "patients_with_high_risk_variants": 44,
+    "patients_with_abnormal_labs": 0,
+    "high_risk_patient_count": 0
+  }
+}

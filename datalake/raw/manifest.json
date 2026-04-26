@@ -1,0 +1,160 @@
+{
+  "root": "datalake/raw",
+  "generated": "2026-04-26 08:21:02",
+  "files": [
+    {
+      "file": "diagnoses/ingest_date=2026-04-26/diagnoses_icd10_csv.parquet",
+      "row_count": 1638,
+      "schema": [
+        "diagnosis_id",
+        "patient_id",
+        "icd10_code",
+        "description",
+        "diagnosis_date",
+        "diagnosing_physician",
+        "is_primary",
+        "severity",
+        "status",
+        "_source_file",
+        "_ingestion_time",
+        "_dataset",
+        "_batch_id"
+      ],
+      "timestamp": "2026-04-26 06:26:01",
+      "sha256": "aeeed895798ff2e598380ed36551dbe8302d5a34cb5c4b1de55dff98e96d6990"
+    },
+    {
+      "file": "labs/ingest_date=2026-04-26/site_gamma_lab_results_parquet.parquet",
+      "row_count": 2026,
+      "schema": [
+        "lab_result_id",
+        "patient_id",
+        "test_name",
+        "test_value",
+        "test_unit",
+        "collection_date",
+        "ordering_physician",
+        "site_name",
+        "_source_file",
+        "_ingestion_time",
+        "_dataset",
+        "_batch_id"
+      ],
+      "timestamp": "2026-04-26 06:26:01",
+      "sha256": "e5fa7df038c336468464a569ee2550ec0a8d9ab1a3bb8cc23ef714320b048e70"
+    },
+    {
+      "file": "medications/ingest_date=2026-04-26/medications_log_json.parquet",
+      "row_count": 1922,
+      "schema": [
+        "medication_id",
+        "patient_id",
+        "medication_name",
+        "dosage",
+        "route",
+        "frequency",
+        "start_date",
+        "end_date",
+        "prescribing_physician",
+        "status",
+        "_source_file",
+        "_ingestion_time",
+        "_dataset",
+        "_batch_id"
+      ],
+      "timestamp": "2026-04-26 06:26:01",
+      "sha256": "0814509e5acc6b796afa57d42ca759727c13ade1773339b050b2a7220b09eb99"
+    },
+    {
+      "file": "notes/ingest_date=2026-04-26/clinical_notes_metadata_csv.parquet",
+      "row_count": 1128,
+      "schema": [
+        "note_id",
+        "patient_id",
+        "note_category",
+        "expected_category",
+        "note_date",
+        "author",
+        "word_count",
+        "is_addendum",
+        "_source_file",
+        "_ingestion_time",
+        "_dataset",
+        "_batch_id"
+      ],
+      "timestamp": "2026-04-26 06:26:01",
+      "sha256": "901d4ede6bd02f69d59930f9f280a71ca1525feba21144f3c771bdc838364e8a"
+    },
+    {
+      "file": "patients/ingest_date=2026-04-26/site_alpha_patients_csv.parquet",
+      "row_count": 370,
+      "schema": [
+        "patient_id",
+        "first_name",
+        "last_name",
+        "date_of_birth",
+        "sex",
+        "blood_group",
+        "admission_dt",
+        "discharge_dt",
+        "contact_phone",
+        "contact_email",
+        "site",
+        "_source_file",
+        "_ingestion_time",
+        "_dataset",
+        "_batch_id"
+      ],
+      "timestamp": "2026-04-26 06:26:01",
+      "sha256": "70020cee5304532a38905918cd77b0c587a35940359992be4d1b710242bfa872"
+    },
+    {
+      "file": "patients/ingest_date=2026-04-26/site_beta_patients_json.parquet",
+      "row_count": 310,
+      "schema": [
+        "patient_id",
+        "birthdate",
+        "gender",
+        "bloodtype",
+        "name.given",
+        "name.family",
+        "encounter.admissiondate",
+        "encounter.dischargedate",
+        "encounter.facility",
+        "contact.phone",
+        "contact.email",
+        "_source_file",
+        "_ingestion_time",
+        "_dataset",
+        "_batch_id"
+      ],
+      "timestamp": "2026-04-26 06:26:01",
+      "sha256": "afa5ba93df2e2922f08478a92b7b16205a32a9a8b87e03ce85a3a47b4fdec2ed"
+    },
+    {
+      "file": "variants/ingest_date=2026-04-26/genomics_variants_parquet.parquet",
+      "row_count": 1137,
+      "schema": [
+        "variant_id",
+        "patient_id",
+        "gene",
+        "chromosome",
+        "position",
+        "ref_allele",
+        "alt_allele",
+        "variant_type",
+        "allele_frequency",
+        "read_depth",
+        "clinical_significance",
+        "sample_date",
+        "sequencing_platform",
+        "_source_file",
+        "_ingestion_time",
+        "_dataset",
+        "_batch_id"
+      ],
+      "timestamp": "2026-04-26 06:26:01",
+      "sha256": "141da5e456ab6a3b0e4418c0ce814d1d220685d7d7e8a7ad1bdb9abd096e238f"
+    }
+  ]
+}

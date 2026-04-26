@@ -413,7 +413,7 @@ def run_analytics():
     print("📊 Analytics Summary")
     print(f"   Completed : {success}")
     print(f"   Skipped   : {skipped}")
-    print(f"   Output    → datalake/reports/analytics/")
+    print("   Output    → datalake/reports/analytics/")
 
 
 if __name__ == "__main__":
